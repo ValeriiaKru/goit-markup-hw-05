@@ -468,16 +468,96 @@
             </div>
         </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop is-open">
         <div class="modal">
-            <button class="modal-close-button" type="button"></button>
-            <svg 
-            class="modal-close-button-icon" 
-            width="24" 
-            height="24" 
-            aria-label="close icon">
-                <use href="./images/icons.svg#icon-close"></use>
-            </svg>
+            <button class="modal-close-button" type="button">
+                <svg class="modal-close-button-icon" width="8" height="8" aria-label="close icon">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+            <p class="order-form-desription">
+                Leave your contacts and we will call you back
+            </p>
+            <form class="order-form">
+                <div class="order-form-field-wrapper">
+                    <label for="user-name" class="order-form-field-label">Name</label>
+                    <div class="order-form-input-wrapper">
+                        <input 
+                        type="text" 
+                        class="order-form-input" 
+                        name="user-name" 
+                        id="user-name" 
+                        pattern="[a-zA-Za-яА-ЯіІїЇєЄґҐʼ]+"
+                        title="Oleksii" 
+                        required />
+                        <svg class="order-form-field-icon" width="18px" height="24px">
+                            <use href="./images/icons.svg#icon-person"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="order-form-field-wrapper">
+                    <label for="user-phone" class="order-form-field-label">Phone</label>
+                    <div class="order-form-input-wrapper">
+                        <input 
+                        type="tel" 
+                        class="order-form-input" 
+                        name="user-phone" 
+                        id="user-phone"
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" 
+                        title="xxx-xxx-xx-xx" 
+                        required 
+                        />
+                        <svg class="order-form-field-icon" width="18px" height="24px">
+                            <use href="./images/icons.svg#icon-phone"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="order-form-field-wrapper">
+                    <label for="user-email" class="order-form-field-label">Email</label>
+                    <div class="order-form-input-wrapper">
+                        <input type="email" 
+                        class="order-form-input" 
+                        name="user-email" 
+                        id="user-email" 
+                        required 
+                        />
+                        <svg class="order-form-field-icon" width="18px" height="24px">
+                            <use href="./images/icons.svg#icon-email"></use>
+                        </svg>
+                    </div>
+                    
+                </div>
+                <div class="order-form-field-wrapper">
+                    <label for="user-comment" class="order-form-field-label">Comment</label>
+                    <textarea 
+                    class="order-form-message" 
+                    name="user-comment"
+                    id="user-comment"
+                    placeholder="Text input"
+                    required
+                    ></textarea>
+                </div>
+                <div class="order-form-checkbox-wrapper">
+                <input 
+                type="checkbox" 
+                class="order-form-privacy-checkbox visually-hidden"
+                id="privacy-policy"
+                name="privacy-policy"
+                value="true"
+                required
+                />
+                <label for="privacy-policy" class="order-form-chechbox-label">
+                    <span class="order-form-own-checkbox">
+                        <svg class="order-form-own-checkbox-icon" width="10px" height="8px">
+                            <use href="./images/icons.svg#icon-click"></use>
+                        </svg>
+                    </span>
+                    I accept the terms and conditions of the 
+                    <a class="privacy-policy-link" href="">Privacy Policy</a>
+                </label>
+                </div>
+                <button class="order-form-submit-button" type="submit">Send</button>
+            </form>
         </div>
     </div>
     
