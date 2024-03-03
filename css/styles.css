@@ -719,11 +719,11 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
-    margin-bottom: 8px;
+    margin-bottom: 16px;
 }
 
 .order-form-field-wrapper {
-    margin-bottom: 16px;
+    margin-bottom: 8px;
 }
 
 .order-form-input {
@@ -863,4 +863,8 @@ line-height: 1.17;
 .order-form-submit-button:focus,
 .order-form-submit-button:hover {
     background: #404bbf;
+}
+
+.order-textarea-wrapper {
+margin-bottom: 16px;
 }
